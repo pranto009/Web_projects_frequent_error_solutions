@@ -1,0 +1,23 @@
+Start Your Xammp and Activate Apache and Mysqlserver
+#Step-1:
+
+$ pip install pymysql
+
+open the init.py file of the main app and add->
+
+
+import pymysql
+pymysql.version_info = (1, 3, 13, "final", 0)
+pymysql.install_as_MySQLdb()
+
+
+#Step-2:
+
+If it throws a error like "Visual c++ 14 is required" then go to -> https://www.scivision.dev/python-windows-visual-c-14-required/
+
+
+#Step-3: mysqlclient can be installed through the manual way. Go to -> https://www.lfd.uci.edu/~gohlke/pythonlibs/
+
+Download appropriate version of mysqlclient based on your python version.
+
+Then $pip install mysqlclient...whl
